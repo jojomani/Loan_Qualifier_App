@@ -11,9 +11,9 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv, save_csv
 
-from qualifier.utils.calculators import (
+from qualifier.utils.calculators import (   
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
 )
@@ -108,8 +108,12 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    # Adding usability dialog for saving the CSV Files.
+    qualifying_loans = []
+    csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
+    csvpath = Path(csvpath)
+
+    return save_csv(csvpath)
 
 
 def run():
