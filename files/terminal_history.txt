@@ -1,0 +1,42 @@
+ 1193  cd ~/Downloads/MyFiles/FinTech\ Class/Repos/Loan_Qualifier_App
+ 1194  cl
+ 1195  git status
+ 1196  cl
+ 1197  conda install fire
+ 1198  pip install fire
+ 1199  cl
+ 1200  pip install qualifier
+ 1201  cl
+ 1202  pip install qualifier.utils.fileio
+ 1203  pip install qualifier.utils
+ 1204  cl
+ 1205  pip install utils
+ 1206  cl
+ 1207  import qualifier.utils.fileio 
+ 1208  pip install qualifier.utils.fileio 
+ 1209  pip remove qualifier
+ 1210  pip uninstall qualifier
+ 1211  pip uninstall utils
+ 1212  c;
+ 1213  clear
+ 1214  git status
+ 1215  git add .
+ 1216  git status
+ 1217  cl
+ 1218  git status
+ 1219  git status
+ 1220  cl
+ 1221  git status
+ 1222  cl
+ 1223  git status
+ 1224  git add .
+ 1225  git status
+ 1226  cl
+ 1227  history
+ 1228  ls -al
+ 1229  history 50
+ 1230  history 50 > terminal_history.txt
+ 1231  cl
+ 1232  ls -al
+ 1233  cat terminal_history.txt
+ 1234  cl
