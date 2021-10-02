@@ -26,3 +26,7 @@ Below is an example of the qualified loans from the example run:
 ![Examples loans output](files/example_loans.png)
 
 Please share any suggestions to improve the Loan Qualifier Application.
+
+----
+
+@jojomani - by Johann Maiga
