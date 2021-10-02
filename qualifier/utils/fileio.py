@@ -6,6 +6,8 @@ This contains a helper function for loading and saving CSV files.
 """
 import csv
 
+from questionary.constants import YES
+
 # Function to load csv file
 
 def load_csv(csvpath):
@@ -30,12 +32,12 @@ def load_csv(csvpath):
             data.append(row)
     return data
 
-# Function to save file as csv
+# Function to save qualifying loans as csv
 
-def save_csv(csvpath, data, header=None):
+def save_csv(csvpath, qualifying_loans, header=None):
 
     with open(csvpath, "w", newline="") as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',')
         if header:
             csvwriter.writerow(header)
-        csvwriter.writerows(data)
+        csvwriter.writerows(qualifying_loans)
